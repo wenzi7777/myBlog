@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>關於 - neko莊園</title>
+    <title>轉義的作用 - neko莊園</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,22 +12,29 @@
     
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="關於我哈嘍哈嘍！！！！👋这里是 Nick一个可爱的蓝孩子~是一個全棧開發者目前有在寫一些能讓自己傻開心的東西主要的工具是 HTML&#x2F;CSS&#x2F;JS&#x2F;TS&#x2F;SCSS&#x2F;Node&#x2F;php&#x2F;Vue&#x2F;React&#x2F;SQL裝備呢，是Mac和Win的雙持者喜欢寫代碼、玩遊戲（主機遊戲居多）   社交帳戶會在Github上發一">
-<meta property="og:type" content="website">
-<meta property="og:title" content="關於">
-<meta property="og:url" content="https://www.1205.moe/about.html">
+    <meta name="description" content="轉義的作用  由於學習JavaScript時是依照實際案例來學習的，因此遺漏了某些少用到的方面。   最近在實現一個需求時，發現轉義符真的超好用！！下面是需求詳情：   -&gt;需要向伺服器內存入html片段，並且這些html片段有行內樣式，如下圖   12345&amp;#123;	&quot;title&quot;:&quot;SPRING&quot;,	&quot;honor&quot;:&amp;quo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="轉義的作用">
+<meta property="og:url" content="https://www.1205.moe/2022/04/13/%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8/index.html">
 <meta property="og:site_name" content="neko莊園">
-<meta property="og:description" content="關於我哈嘍哈嘍！！！！👋这里是 Nick一个可爱的蓝孩子~是一個全棧開發者目前有在寫一些能讓自己傻開心的東西主要的工具是 HTML&#x2F;CSS&#x2F;JS&#x2F;TS&#x2F;SCSS&#x2F;Node&#x2F;php&#x2F;Vue&#x2F;React&#x2F;SQL裝備呢，是Mac和Win的雙持者喜欢寫代碼、玩遊戲（主機遊戲居多）   社交帳戶會在Github上發一">
+<meta property="og:description" content="轉義的作用  由於學習JavaScript時是依照實際案例來學習的，因此遺漏了某些少用到的方面。   最近在實現一個需求時，發現轉義符真的超好用！！下面是需求詳情：   -&gt;需要向伺服器內存入html片段，並且這些html片段有行內樣式，如下圖   12345&amp;#123;	&quot;title&quot;:&quot;SPRING&quot;,	&quot;honor&quot;:&amp;quo">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2022-02-21T12:01:19.306Z">
-<meta property="article:modified_time" content="2022-02-21T12:01:19.306Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/42164227/163214869-8cfed491-8e22-4672-ace0-5ab1d1b6fa8f.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/42164227/163215470-ab5d1cec-c737-4754-89cc-1c09c613fc40.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/42164227/163215488-937da462-5d40-430f-b37f-757bb1c25fe6.png">
+<meta property="article:published_time" content="2022-04-13T14:24:00.000Z">
+<meta property="article:modified_time" content="2022-04-13T15:29:48.495Z">
 <meta property="article:author" content="NickXu">
+<meta property="article:tag" content="學習記錄">
+<meta property="article:tag" content="數據庫">
+<meta property="article:tag" content="Nodejs">
 <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1649863813852">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/42164227/163214869-8cfed491-8e22-4672-ace0-5ab1d1b6fa8f.png">
+    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1649863813854">
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1649863813852">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1649863813852">
-    <link rel="stylesheet" href="/css/style.css?v=1649863813852">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1649863813854">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1649863813854">
+    <link rel="stylesheet" href="/css/style.css?v=1649863813854">
      
     
 <meta name="generator" content="Hexo 6.0.0"></head>
@@ -73,7 +80,7 @@
             </div>
         </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple true" href="/about.html" title="关于博客">
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于博客">
             <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
             <div class="mdui-list-item-content">
                 关于博客
@@ -201,37 +208,58 @@
   <article>
       
           <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-              <img data-src="https://www.dmoe.cc/random.php" data-sizes="auto" alt="關於" class="lazyload">
-              <h1>關於</h1>
+              <img data-src="https://www.dmoe.cc/random.php" data-sizes="auto" alt="轉義的作用" class="lazyload">
+              <h1>轉義的作用</h1>
           </div>
       
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2022年02月21日</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年04月13日</a>
 </div>
 
       
 
-      <h2 id="關於我"><a href="#關於我" class="headerlink" title="關於我"></a>關於我</h2><h3 id="哈嘍哈嘍！！！！👋"><a href="#哈嘍哈嘍！！！！👋" class="headerlink" title="哈嘍哈嘍！！！！👋"></a>哈嘍哈嘍！！！！👋</h3><h3 id="这里是-Nick"><a href="#这里是-Nick" class="headerlink" title="这里是 Nick"></a>这里是 Nick</h3><h3 id="一个可爱的蓝孩子"><a href="#一个可爱的蓝孩子" class="headerlink" title="一个可爱的蓝孩子~"></a>一个可爱的蓝孩子~</h3><h3 id="是一個全棧開發者"><a href="#是一個全棧開發者" class="headerlink" title="是一個全棧開發者"></a>是一個全棧開發者</h3><h3 id="目前有在寫一些能讓自己傻開心的東西"><a href="#目前有在寫一些能讓自己傻開心的東西" class="headerlink" title="目前有在寫一些能讓自己傻開心的東西"></a>目前有在寫一些能讓自己傻開心的東西</h3><h3 id="主要的工具是-HTML-x2F-CSS-x2F-JS-x2F-TS-x2F-SCSS-x2F-Node-x2F-php-x2F-Vue-x2F-React-x2F-SQL"><a href="#主要的工具是-HTML-x2F-CSS-x2F-JS-x2F-TS-x2F-SCSS-x2F-Node-x2F-php-x2F-Vue-x2F-React-x2F-SQL" class="headerlink" title="主要的工具是 HTML&#x2F;CSS&#x2F;JS&#x2F;TS&#x2F;SCSS&#x2F;Node&#x2F;php&#x2F;Vue&#x2F;React&#x2F;SQL"></a>主要的工具是 HTML&#x2F;CSS&#x2F;JS&#x2F;TS&#x2F;SCSS&#x2F;Node&#x2F;php&#x2F;Vue&#x2F;React&#x2F;SQL</h3><h3 id="裝備呢，是Mac和Win的雙持者"><a href="#裝備呢，是Mac和Win的雙持者" class="headerlink" title="裝備呢，是Mac和Win的雙持者"></a>裝備呢，是Mac和Win的雙持者</h3><h3 id="喜欢寫代碼、玩遊戲（主機遊戲居多）"><a href="#喜欢寫代碼、玩遊戲（主機遊戲居多）" class="headerlink" title="喜欢寫代碼、玩遊戲（主機遊戲居多）"></a>喜欢寫代碼、玩遊戲（主機遊戲居多）</h3><br />
+      <h2 id="轉義的作用"><a href="#轉義的作用" class="headerlink" title="轉義的作用"></a>轉義的作用</h2><br />
+
+<p><strong>由於學習JavaScript時是依照實際案例來學習的，因此遺漏了某些少用到的方面。</strong></p>
 <br />
 
-<h2 id="社交帳戶"><a href="#社交帳戶" class="headerlink" title="社交帳戶"></a>社交帳戶</h2><p><strong>會在Github上發一些廢廢的東西www</strong></p>
-<h3 id="Github：-Github"><a href="#Github：-Github" class="headerlink" title="Github： Github"></a>Github： <a target="_blank" rel="noopener" href="https://github.com/wenzi7777" title="Github">Github</a></h3><br />
-
-<p><strong>還有Nick自己開發的彈幕視頻網： MikuProject未來計畫 的個人空間頁面</strong></p>
-<h3 id="MikuProject：-MP"><a href="#MikuProject：-MP" class="headerlink" title="MikuProject： MP"></a>MikuProject： <a target="_blank" rel="noopener" href="https://mp.1205.moe/space/UID1" title="MP">MP</a></h3><br />
+<p><em>最近在實現一個需求時，發現轉義符真的超好用！！下面是需求詳情：</em></p>
 <br />
 
-<h2 id="NS的SW碼"><a href="#NS的SW碼" class="headerlink" title="NS的SW碼"></a>NS的SW碼</h2><p><strong>這是主號的SW碼</strong></p>
-<h3 id="SW"><a href="#SW" class="headerlink" title="SW"></a>SW</h3><br />
+<p><em>-&gt;需要向伺服器內存入html片段，並且這些html片段有行內樣式，如下圖</em></p>
 <br />
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;title&quot;</span><span class="punctuation">:</span><span class="string">&quot;SPRING&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;honor&quot;</span><span class="punctuation">:</span><span class="string">&quot;&lt;span style=&#x27;color: blue;&#x27;&gt;SPRING&lt;/span&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;description&quot;</span><span class="punctuation">:</span><span class="string">&quot;代表您加入了SPRING計畫&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<br />
+
+<h3 id="發現問題🤔：在這裏單引號，雙引號都用上了，那麼要如何才能在SQL語句內拼上這段字符串呢？"><a href="#發現問題🤔：在這裏單引號，雙引號都用上了，那麼要如何才能在SQL語句內拼上這段字符串呢？" class="headerlink" title="發現問題🤔：在這裏單引號，雙引號都用上了，那麼要如何才能在SQL語句內拼上這段字符串呢？"></a>發現問題🤔：在這裏單引號，雙引號都用上了，那麼要如何才能在SQL語句內拼上這段字符串呢？</h3><br />
+
+<p><strong>超級重要！！！ -&gt; SQL語句需要被一對引號括起來。</strong></p>
+<br />
+
+<p><em>有的小貓咪可能就會說了，用模板字符串(``)不就可以了嗎？</em></p>
+<br />
+
+<p><strong>其實是不行的，請看這張圖</strong><br><img data-fancybox="gallery" data-sizes="auto" data-src="https://user-images.githubusercontent.com/42164227/163214869-8cfed491-8e22-4672-ace0-5ab1d1b6fa8f.png" alt="用模板字符串" class="lazyload"></p>
+<br />
+
+<p><strong>這裡使用單引號、雙引號都會報錯</strong><br><img data-fancybox="gallery" data-sizes="auto" data-src="https://user-images.githubusercontent.com/42164227/163215470-ab5d1cec-c737-4754-89cc-1c09c613fc40.png" alt="雙引號" class="lazyload"></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://user-images.githubusercontent.com/42164227/163215488-937da462-5d40-430f-b37f-757bb1c25fe6.png" alt="單引號" class="lazyload"></p>
+<br />
+
+<h3 id="gt-所以這裡的解決方案就是：轉義符號"><a href="#gt-所以這裡的解決方案就是：轉義符號" class="headerlink" title="-&gt; 所以這裡的解決方案就是：轉義符號"></a>-&gt; 所以這裡的解決方案就是：轉義符號</h3><p><strong>給出正確的SQL語句</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> items <span class="keyword">SET</span> itemValue <span class="operator">=</span><span class="string">&#x27;&#123;&quot;title&quot;:&quot;SPRING&quot;,&quot;honor&quot;:&quot;&lt;span style=\&#x27;</span>color: blue;\<span class="string">&#x27;&gt;SPRING&lt;/span&gt;&quot;,&quot;description&quot;:&quot;代表您加入了SPRING計畫&quot;&#125;&#x27;</span> <span class="keyword">WHERE</span> itemKey<span class="operator">=</span>&quot;UID1*ActivatedHonor&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="成功！"><a href="#成功！" class="headerlink" title="成功！"></a>成功！</h3>
   </article>
 
   
       
     <div class="nexmoe-post-copyright">
         <strong>Author：</strong>NickXu<br>
-        <strong>Link：</strong><a href="https://www.1205.moe/about.html" title="https:&#x2F;&#x2F;www.1205.moe&#x2F;about.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;www.1205.moe&#x2F;about.html</a><br>
+        <strong>Link：</strong><a href="https://www.1205.moe/2022/04/13/%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8/" title="https:&#x2F;&#x2F;www.1205.moe&#x2F;2022&#x2F;04&#x2F;13&#x2F;%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;www.1205.moe&#x2F;2022&#x2F;04&#x2F;13&#x2F;%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
         
@@ -242,6 +270,10 @@
   
   <div class="nexmoe-post-meta nexmoe-rainbow">
     
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%BE%8C%E7%AB%AF/">後端</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Nodejs/" rel="tag">Nodejs</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%AD%B8%E7%BF%92%E8%A8%98%E9%8C%84/" rel="tag">學習記錄</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E6%95%B8%E6%93%9A%E5%BA%AB/" rel="tag">數據庫</a>
     
 </div>
 
@@ -252,8 +284,8 @@
 <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
-        this.page.url = 'https://www.1205.moe/about.html'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://www.1205.moe/about.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://www.1205.moe/2022/04/13/%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.1205.moe/2022/04/13/%E8%BD%89%E7%BE%A9%E7%9A%84%E4%BD%9C%E7%94%A8/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script id="disqus-thread-script">
@@ -301,10 +333,10 @@
 
  
 
-<script async src="/js/app.js?v=1649863813853"></script>
+<script async src="/js/app.js?v=1649863813856"></script>
 
 
-	<script async src="/js/search.js?v=1649863813853"></script>
+	<script async src="/js/search.js?v=1649863813856"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
